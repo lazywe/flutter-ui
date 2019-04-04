@@ -1,3 +1,7 @@
+/**
+ * auth: linhaoran
+ * Email: 1476589247@qq.com
+ */
 import 'package:flutter/material.dart';
 
 class Index extends StatelessWidget {
@@ -48,12 +52,12 @@ class Index extends StatelessWidget {
               constraints: BoxConstraints.expand(
                 height: Theme.of(context).textTheme.display1.fontSize * 1.1 + 200.0
               ),
-              foregroundDecoration: BoxDecoration(
-                image: DecorationImage(
-                  image: NetworkImage('https://www.example.com/images/frame.png'),
-                  centerSlice: Rect.fromLTRB(270.0, 180.0, 1360.0, 730.0),
-                )
-              ),
+//              foregroundDecoration: BoxDecoration(
+//                image: DecorationImage(
+//                  image: NetworkImage('https://www.example.com/images/frame.png'),
+//                  centerSlice: Rect.fromLTRB(270.0, 180.0, 1360.0, 730.0),
+//                )
+//              ),
               transform: Matrix4.rotationZ(0.1),
             ),
           )

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:efox_flutter/components/widgetComp.dart' as WidgetComp;
+import 'package:efox_flutter/components/widget_comp.dart' as widget_comp;
 import 'demo_count.dart' as DemoCount;
 import 'demo_extent.dart' as DemoExtent;
 import 'demo_custom.dart' as DemoCustom;
@@ -8,7 +8,6 @@ import 'demo_builder.dart' as DemoBuilder;
 class Index extends StatefulWidget {
   static String title = 'GridView';
   static String mdUrl = 'docs/widget/scrollview/gridview/index.md';
-  static String codeUrl = 'docs/widget/scrollview/gridview/code.md';
   static String originCodeUrl = 'https://flutter.io/docs/cookbook/lists/grid-lists';
 
   @override
@@ -18,9 +17,8 @@ class Index extends StatefulWidget {
 class _IndexState extends State<Index> {
   @override
   Widget build(BuildContext context) {
-    return WidgetComp.Index(
+    return widget_comp.Index(
       title: Index.title,
-      codeUrl: Index.codeUrl,
       originCodeUrl: Index.originCodeUrl,
       mdUrl: Index.mdUrl,
       demoChild: [

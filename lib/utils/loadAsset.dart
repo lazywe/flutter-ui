@@ -1,13 +1,10 @@
-import 'package:dio/dio.dart';
-import 'package:efox_flutter/store/store.dart' as Store;
-import 'file.dart' as FileUtil;
+import 'package:flutter/services.dart' show rootBundle;
+import 'package:efox_flutter/http/index.dart' as Http;
 
-Future<String> loadMarkdownAssets(path) async {
-  if (!Store.model.config.state.isPro) {
-    return FileUtil.readLocaleFile(path);
-  }
-  String url = Store.model.config.state.env.GithubMarkdownOrigin + path;
-  return Dio().get(url).then((res) {
-    return res.data;
-  });
+Future<String> readLocaleFile(path) async {
+  return await rootBundle.loadString('${path}', cache: false);
+}
+
+Future<String> readRemoteFile(path) async {
+  return await Http.get(url: path);
 }

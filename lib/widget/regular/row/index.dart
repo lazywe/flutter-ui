@@ -1,12 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:efox_flutter/components/widgetComp.dart' as WidgetComp;
+import 'package:efox_flutter/components/widget_comp.dart' as widget_comp;
 import 'demo.dart' as Demo;
 import 'demo_expanded.dart' as DemoExpanded;
 
 class Index extends StatefulWidget {
   static String title = 'Row';
   static String originCodeUrl = 'https://docs.flutter.io/flutter/widgets/Row-class.html';
-  static String codeUrl = 'docs/widget/regular/row/code.md';
   static String mdUrl = 'docs/widget/regular/row/index.md';
 
   @override
@@ -17,9 +16,8 @@ class _IndexState extends State<Index> {
 
   @override
   Widget build(BuildContext context) {
-    return WidgetComp.Index(
+    return widget_comp.Index(
       title: Index.title,
-      codeUrl: Index.codeUrl,
       originCodeUrl: Index.originCodeUrl,
       mdUrl: Index.mdUrl,
       demoChild: [

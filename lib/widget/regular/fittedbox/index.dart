@@ -1,11 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:efox_flutter/components/widgetComp.dart' as WidgetComp;
+import 'package:efox_flutter/components/widget_comp.dart' as widget_comp;
 import 'demo.dart' as Demo;
 
 class Index extends StatefulWidget {
   static String title = 'FittedBox';
-  static String originCodeUrl = '';
-  static String codeUrl = 'docs/widget/regular/fittedbox/code.md';
+  static String originCodeUrl = 'https://docs.flutter.io/flutter/widgets/FittedBox-class.html';
   static String mdUrl = 'docs/widget/regular/fittedbox/index.md';
   @override
   _IndexState createState() => _IndexState();
@@ -14,9 +13,8 @@ class Index extends StatefulWidget {
 class _IndexState extends State<Index> {
   @override
   Widget build(BuildContext context) {
-    return WidgetComp.Index(
+    return widget_comp.Index(
       title: Index.title,
-      codeUrl: Index.codeUrl,
       originCodeUrl: Index.originCodeUrl,
       mdUrl: Index.mdUrl,
       demoChild: <Widget>[

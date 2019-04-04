@@ -1,9 +1,40 @@
 {
-    "title": "efox flutter tech app",
     "title_component": "Components",
     "title_my": "My",
-    "widgetType": {
-        "regularLayout": "common layout"
+    "common": {
+        "login": "Sign In",
+        "logout": "Logout"
     },
-    "loading": "Loading"
+    "common_mine_1": {
+        "cn": "CN",
+        "en": "EN",
+        "language": "Select Language",
+        "environment": "Select Environment",
+        "compProgress": "Components Progress",
+        "success": "Success To Change ",
+        "theme": "Select Theme",
+        "version": "Version"
+    },
+    "mine": {
+        "loadNetwork": "Load Network Document Resources",
+        "loadLocal": "Load Local Document Resources"
+    },
+    "login": {
+        "account": "Account",
+        "account_tips": "Please Input Account",
+        "account_error_tips": "Account Is Not Empty",
+        "password": "Password",
+        "password_tips": "Please Input Password",
+        "password_error_tips": "Password Is Not Empty"
+    },
+    "loading": "Loading",
+    "ScrollComponents": "ScrollComponents",
+    "Common": "Common",
+    "Form": "Form",
+    "Regular": "Regular",
+    "Navigator": "Navigator",
+    "BulletBox": "BulletBox",
+    "Animate": "Animate",
+    "Gestures": "Gestures",
+    "Vision": "Vision"
 }
